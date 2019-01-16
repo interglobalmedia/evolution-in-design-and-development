@@ -1,0 +1,685 @@
+import { Head } from 'mdx-deck'
+import { Notes } from 'mdx-deck'
+import { Image } from 'mdx-deck'
+import { Appear } from 'mdx-deck'
+export { default as theme } from './theme'
+
+import GetAngular from './assets/GetAngular.png';
+import markDormRoom from './assets/markDormRoom.jpg';
+import XSS from './assets/XSS.png';
+import JSX from './assets/JSX.png';
+
+<Head>
+  <title>Evolution of Design And Development</title>
+  <link rel="stylesheet" href="style.css"/>
+</Head>
+
+## Evolution of `Design` And `Development` 
+
+A `Melting` Pot
+
+---
+
+Gone are the days when <b>roles</b> in <b>web development</b> and <b>design</b> were clearly delineated. 
+
+---
+
+You had your <b>graphic designers</b>,
+
+---
+
+your <b>web designers</b>,
+
+---
+
+and your <b>web developers</b>.
+
+---
+
+<b>Graphic designers</b> needed to know their <b>Adobe</b> software.
+
+---
+
+<b>Web designers</b> needed to know their <b>html</b> and <b>css</b>.
+
+---
+
+Web developers needed to know their programming languages of choice, i.e., Java, <b>PHP</b>, <b>C#</b>, <b>C++</b>, <b>Objective-C</b>, what have you.
+
+---
+
+Designers designed the <b>face</b> of the web.
+
+---
+
+Developers developed the <b>backend</b>, the <b>logic</b>.
+
+---
+
+Then came along <b>ECMAScript 2009</b>.
+
+---
+
+And the <b>WWW</b> was slowly creeping into our lives.
+
+---
+
+Also in <b>2009</b>, a little side project was created by developers <b>Misko Havery</b> and <b>Adam Abrons</b> called <b>GetAngular</b>.
+
+<img src={GetAngular} />
+
+---
+
+<blockquote>It was meant to be an end-to-end tool that allowed web designers to interact with both the frontend and the backend.</blockquote> <cite>Andrew Austin, <a href="http://andrewaustin.com/an-overview-of-angularjs-for-managers/" target="_blank">An Overview of AngularJS For Managers</a>, August 27, 2014</cite>
+
+---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/r1A1VR0ibIQ" frameBorder="0" allowFullScreen />
+<br />
+In his <b>keynote</b> at <b>ng-conf 2014</b>, <b>Misko Havery</b> said of <b>GetAngular</b>,
+
+---
+
+<blockquote>
+  I didn't want to simplify the application development process for developers.
+</blockquote>
+
+---
+
+<blockquote>
+  I wanted to simplify it for web designers. People who don't know how to program.
+</blockquote>
+
+---
+
+Today that little side project is known as <i><b>AngularJS.</b></i>
+
+---
+
+Then there was <b>Facebook's</b> <i>XHP</i>.
+
+---
+
+In a video from <b>OSCON 2014</b>, <i><b>Christopher Chedeau</b></i>, Front End Engineer at <b>Facebook</b>, gave some background history about <b>XHP</b> and how it evolved into <i><b>React</b></i>.
+
+---
+
+<blockquote>
+In <b>2004</b>, <b>Mark Zuckerberg</b> was still in his dorm room, and the way one wrote <b>PHP</b> at the time was <b>string concatenation</b> in order to <b>render</b> your <b>markup</b>.
+</blockquote>
+
+---
+
+<img src={markDormRoom}/>
+
+---
+
+<blockquote>
+It was a <i><b>very easy</b></i> way to <b>program</b>. You could be a <b>backend engineer</b>, a <b>front end engineer</b>, <i><b>even</b></i> someone who <i><b>doesn't know</b></i> how to <b>program</b>, and you're going to get it working. This is why <b>PHP</b> is so popular, and why so much of the web is built with it.
+</blockquote>
+
+---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eCf5CquV_Bw" frameBorder="0" allowFullScreen />
+
+---
+
+<blockquote>
+<b>Facebook</b> grew a lot using <b>string concatenation</b>, and it was working really well. But sometimes there was one big issue with it. Which is <b>XSS Injections</b>. So if you write this code, it's not secure.
+</blockquote>
+
+---
+
+<img src={XSS}/>
+
+---
+
+<blockquote>
+If an <b>attacker</b> is about to insert any string he wants, he is going to be able to run <i><b>arbitrary</b></i> <b>JavaScript</b> in your page. The issue with this is, this <b>JavaScript</b> is going to be <b>executed</b> with the <i><b>user's</b></i> permission. So basically you take over the entire user account...
+</blockquote>
+
+---
+
+<blockquote>
+Since then, and up to time of video, <b>Facebook</b> moved a lot of the <b>application logic</b> into <b>JavaScript</b> because (they) didn't want to get the <b>client-server</b> roundtrip time. (They) tried a lot of different things with <b>JavaScript</b> that <i><b>didn't</b></i> <b>work</b>.
+</blockquote>
+
+---
+
+<blockquote>
+Then one of the <b>Facebook</b> Engineers, <b>Jordan Walke</b>, told his manager, "I'm going to <i>port</i> <b>XHP</b> to <b>JavaScript</b>. And he managed to convince him to give him 6 months (to do it).
+</blockquote>
+
+---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GW0rj4sNH2w" frameBorder="0" allowFullScreen />
+
+---
+
+<blockquote>
+The first time <b>(Christopher Chedeau)</b> heard about it, <b>(he)</b> was like, there is no way this is going to work, but if it does, this is going to be huge.
+</blockquote>
+
+---
+
+In <b>2013</b>, <b>Facebook</b> was already using <b>es6 syntax</b> in their code, and it took (them) a week to write <b>JSX</b>.
+
+---
+
+<img src={JSX} />
+
+---
+
+Did you know that when <b>Facebook</b> <i><b>"developed"</b></i> <b>XHP</b>, as of <b>2013</b>, only one blog post had been written about it? And as of today ... how many have been written about <b>React</b>?
+
+---
+
+<b>Chris</b> attributes this to the fact that <b>Facebook</b> <i><b>waited</b></i> so long to <b>open source</b> <b>XHP</b>. <i><b>6 years</b></i>, as a matter of fact. They didn't make the same mistake with <b>React</b>.
+
+---
+
+<b>React</b> was <i><b>first deployed</b></i> on <b>Facebook's</b> newsfeed in <b>2011</b> and later on <b>Instagram.com</b> in <b>2012</b>. It was <i><b>open-sourced</b></i> at <b>JSConf US</b> in <b>May 2013</b>.
+
+---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GW0rj4sNH2w" frameBorder="0" allowFullScreen />
+
+---
+
+And the <i><b>rest</b></i> is <b>history</b> ...
+
+---
+
+Today I'm going to talk about the <i><b>relationship</b></i> between <b>development</b> and <b>design</b> in a <b>React</b> Application, <i><b>focusing</b></i> on the <b>client side</b> (of course).
+
+---
+
+There are several ways of <i><b>approaching</b></i> the <b>design</b> of a <b>React</b> application.
+
+---
+
+## CSS, POSTCSS, SCSS
+
+---
+
+<b>CSS</b> is the more <b>traditional</b> approach that has been around the <b>longest</b>.
+
+---
+
+If <b>you</b> are part of a team and have a <b>web designer</b> create the <b>CSS</b> for the <b>project</b>,
+
+---
+
+<b>you</b> might create the <b>React component</b>, and the <b>designer</b> create the <b>CSS</b>.
+
+---
+
+And any <b>CSS</b> you would write in your component's <b>CSS</b> file would be <b>global</b>. It could apply to any other component which used the <i><b>same</b></i> <b>classes</b> across the application.
+
+---
+
+Which is <b>fine</b> if that's what you <b>want</b>.
+
+---
+
+## App.js
+
+```jsx
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import '../style/App.css';
+import {
+  TodoForm,
+  TodoList, 
+  Footer
+} from './components/todo';
+import {
+  addTodo, 
+  generateId, 
+  findById, 
+  toggleTodo, 
+  updateTodo, 
+  removeTodo, 
+  filterTodos
+} from './lib/todoHelpers';
+import {
+  pipe, 
+  partial
+} from './lib/utils';
+import PropTypes from 'prop-types';
+import {
+  loadTodos, 
+  createTodo, 
+  saveTodo, 
+  destroyTodo
+} from './lib/todoService';
+
+```
+<a href="https://github.com/interglobalmedia/react-todo-app/blob/master/src/App.js">Full Example</a>
+
+---
+
+## App.css
+
+```css
+.App {
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-size: 16px;
+}
+```
+<a href="https://github.com/interglobalmedia/react-todo-app/blob/master/style/App.css" fontWeight="bold" textColor="rebeccapurple" target="_blank">Full Example</a>
+
+---
+
+<b>POSTCSS</b> is a bit <b>different</b>.
+
+---
+
+You can <b>"modularize"</b> your styles with <b>partials</b>,
+
+---
+
+so as to have better <b>control</b> over your <b>CSS</b> code base when it <b>scales</b> big time.
+
+---
+
+After all, working with <i><b>smaller</b></i>, more <b>focused</b> chunks is <i><b>better</b></i>.<br/>
+
+<a href="https://github.com/interglobalmedia/react-timeline-app">Full Example</a>
+
+---
+
+<i><b>BUT</b></i>, the <b>styles</b> are still <i><b>technically</b></i> <b>global</b>.
+
+---
+
+And then you have <b>Sass/Scss</b>.
+
+---
+
+First released on <b>November 28, 2006</b>, <b>Sass/Scss</b> is great because you have all these really cool <b>features</b> at your disposal that <i><b>extend</b></i> <b>CSS</b> big time.
+
+---
+
+It allows you to use <b>variables</b>, <b>nested rules</b>, <b>inline imports</b>, and <i><b>so much</b></i> more.
+
+---
+
+<b>Sass/Scss</b> is so <i><b>way out</b></i> there in terms of <b>CSS pre-processing</b> <i><b>features</b></i> that I almost regard it as <b>CSS programming</b>.
+
+---
+
+In fact, <b>Sass/Scss</b> not only supports/extends the plain <b>CSS property syntax</b>, but it supports a small set of <b>extensions</b> called <b>SassScript</b>. <b>SassScript</b> allows <b>properties</b> to use <b>variables</b>, <b>arithmetic</b>, and extra <b>functions</b>. <b>SassScript</b> can be <b>used</b> in any <b>property value</b>.
+
+---
+
+You can <i><b>experiment</b></i> with <b>SassScript</b> in <b>iTerm2/Terminal</b> using the `sass -i` command.
+
+---
+
+Just make sure that you have <b>Sass/Scss</b> <i><b>installed</b></i> on your <b>computer</b>!
+
+---
+
+<b>SassScript</b> supports <b>8</b> data types.
+
+---
+
+`numbers (1,2,3,10px),`
+
+---
+
+strings of text `with` and `without` `quotes("foo", 'bar', boo)`,
+
+---
+
+`colors(pink, #cdcdcd, rgba(0, 0, 0, 0.7))`,
+
+---
+
+`booleans(true, false)`,
+
+---
+
+`nulls(null)`,
+
+---
+
+list of `values`, ***separated by*** `spaces` or `commas(3em 2em  0 1em, Helvetica, Arial, sans-serif)`,
+
+---
+
+`maps` from one value to another `(key1: value1, key2: value2)`,
+
+---
+
+function references.
+
+---
+
+## Example of a function
+
+```scss
+div {
+    hsl(0, 25%, 32%);
+}
+```
+
+---
+
+compiles to
+
+```css
+div {
+    color: #663d3d;
+}
+```
+---
+
+## #Interpolation
+
+---
+
+```scss
+$name: boo;
+$attr: border;
+p.#{$name} {
+  #{$attr}-color: pink;
+}
+```
+---
+
+compiles to
+
+```css
+p.boo {
+    border-color: pink;
+}
+```
+
+---
+
+or
+
+<a href="https://github.com/interglobalmedia/portfolio/blob/master/src/components/Skills.js" target="_blank">Skills.js</a><br />
+<a href="https://github.com/interglobalmedia/portfolio/blob/master/src/style/partials/_skills.scss" target="_blank">_skills.scss</a><br />
+<a href="https://interglobalmedia.github.io/portfolio/#/skills" target="_blank">Visual Result</a>
+
+---
+
+## Inline Styles
+
+---
+
+So why <b>inline styles</b>?
+
+---
+
+After all, <b>CSS</b> <i><b>purists</b></i> shun them.
+
+---
+
+I love <b>CSS</b>, <b>POSTCSS</b>, <b>Sass/Scss</b>.
+
+---
+
+But recently I came to love <b>inline styles</b> too.
+
+---
+
+Because <b>inline styles</b> are <b>LOCAL</b> to the component in which they are placed. In other words, they have <b>local scope</b>.
+
+---
+
+Whatever is placed <b>directly</b> within the <b>component</b>, <i><b>stays</b></i> in the <b>component</b>.
+
+---
+
+## Inline Styles
+
+```jsx
+import React, {Component} from 'react';
+const Button = (props) => {
+	const buttonStyle = {
+		background: 'pink',
+		color: 'rebeccapurple',
+		fontFamily: 'Inconsolata, monospace',
+		fontSize: '16px'
+	}
+	return (
+		<div>
+			<button onClick={props.clicked} style={buttonStyle}>{props.text}</button>
+		</div>
+	)
+}
+export default Button;
+```
+
+<a  href="https://github.com/interglobalmedia/bridge_tdd_workshop/blob/master/client/components/button/index.jsx" target="_blank">Full Example</a>
+
+---
+
+So I thought it would be fun to apply <b>inline styles</b> to a <b>live</b> project.
+
+---
+
+Visit (or click) the link below and either download the zip file or `git clone` the repo.<br />
+<br />
+<a href="https://github.com/interglobalmedia/evolution-design-dev-sass" target="_blank">evolution-design-dev-sass</a>
+
+---
+
+Resources:<br />
+<br />
+<a href="https://medium.com/yplan-eng/inline-styles-are-so-2016-f100b79dafe1" trget="_blank">Inline Styles are so 2016</a>,<br /> <i>Michele Bertoli</i>,<br /> Front End Engineer, Facebook
+
+---
+
+There are <b>4</b> branches:<br /><br /> 
+<b>master</b><br /> 
+<b>radium</b><br /> 
+<b>radium-media-queries</b><br /> 
+<b>radium-pseudo-classes</b>
+
+---
+
+<ul>
+  <Appear>
+    <li>Don't touch the master branch</li>
+    <li>Start off with the radium branch</li>
+    <li>Don't start using radium yet</li>
+    <li>Just add inline styles for now</li>
+  </Appear>
+</ul>
+
+---
+
+Now let's add `radium` to the mix.
+
+---
+
+So why `radium`?
+
+---
+
+Not everything you can do with <b>CSS</b> can be done with `inline styles`.
+
+---
+
+Two biggies are `@media-queries` and `@keyframes`. Huge.
+
+---
+
+That's where `radium` comes to the `rescue`.
+
+---
+
+`radium` is already installed. We just need to `import` it in the appropriate places.
+
+---
+
+I created <b>3</b> other branches in case if you want to get fancy and split off your styles into the corresponding <b>feature</b> branches. It's up to you.
+
+---
+
+We are going to make this a <b>2</b> step process. First we'll import it only into `Gallery.js` and `GalleryModal.js`.
+
+---
+
+At the <b>top</b> of the <b>Component</b> file:<br /><br />
+
+```jsx
+import Radium from 'radium';
+```
+
+---
+
+At the <b>bottom</b> of the <b>Component</b> file:<br /><br />
+
+```jsx
+export default Radium(Gallery);
+export default Radium(GalleryModal);
+```
+
+---
+
+Now see if you can improve upon your `inline styles`. Again, the link to `radium` on <b>Github</b> for reference:<br /><br />
+<a href="https://github.com/FormidableLabs/radium" target="_blank">radium on Github</a>
+
+---
+
+By now you are probably encountering issues with `@media-queries` and `@keyframes`. That's because we haven't implemented step <b>2</b> yet.
+
+---
+
+At the top of `App.js`:
+
+```jsx
+import Radium, {StyleRoot} from 'radium';
+```
+
+Then at the bottom of `App.js` in the `return` statement:
+
+```jsx
+return (
+  <StyleRoot>
+    <div className='App'></div>
+  </StyleRoot>
+);
+```
+
+---
+
+Then, at the bottom of `App.js`,<br/> 
+
+```jsx
+export default Radium(App);
+```
+
+---
+
+Now see what happens. Refer to the `radium` <b>documentation</b> if necessary.
+
+---
+
+Commit your changes and `cd` out of <b>evolution-design-dev-sass</b>.
+
+---
+
+## CSS Modules
+
+---
+
+So what are <b>CSS Modules</b> and why would you even want to use them?
+
+---
+
+Some people want to <b>keep</b> their <b>external stylesheets</b> but want to `localize` their styles. That's where <b>CSS Modules</b> come in. We'll be using a <b>CRA</b> based version of our <b>project</b> for that.
+
+---
+
+First `git clone` or download the zip of the <a href="https://github.com/interglobalmedia/evolution-presentation-cra" target="_blank">evolution-presentation-cra</a> `repo`.
+
+---
+
+After you have `npm install`ed, create a new branch in which you will <b>eject</b> out of <b>CRA</b>.
+
+---
+
+In order to enable <b>CSS Modules</b>, we have to <b>eject</b>. <b>CRA</b> does not support <b>CSS Modules</b>.
+
+---
+
+Purportedly <b>full support</b> is on the way with <b>CRA 2</b>. However, the <b>release date</b> is unknown.
+
+---
+
+First go into the <i><b>new</b></i> `config` directory and into the `webpack.config.dev.js` file.
+
+---
+
+Then locate the `css rules` within `module:`, and in `options` under `importLoaders: 1`, add:<br /><br />
+```jsx
+modules: true,<br />
+localIdentName: '[name]__[local]__[hash:base64:5]',
+```
+
+---
+
+Next you want to `import` your `classes` from the <b>stylesheet</b> corresponding to the `component` you are styling.
+
+---
+
+This is pretty much the same as importing anything else into a component.<br /><br />
+At the top of `App.js`
+
+```jsx
+import appClasses from './App.css';
+```
+Then, for `example`:<br /><br />
+
+```jsx
+return (
+	<div className={appClasses.App}></div>
+);
+```
+
+---
+
+## Conclusion
+
+---
+
+It's really hard to say what is the <b>"good"</b> or <b>"bad"</b> way to style your application these days. Since we all are working with technology, and are always forward thinking, we <b>SHOULD</b> try new things.
+
+---
+
+In the end, we should go with what we think is best at any given time and for any particular situation.
+
+---
+
+I, for one, found that neither <b>CSS</b>, <b>CSS Modules</b>, nor <b>Radium</b> provided me with 100% viable solutions. I ended up with a <i><b>hybrid</b></i>. As <b>Michele Bertoli</b> of <b>Facebook</b> states in his article <a href="https://medium.com/yplan-eng/inline-styles-are-so-2016-f100b79dafe1" target="_blank">Inline Styles are so 2016</a>,
+
+---
+
+"I think that being a front-ender nowadays is one of best jobs in the world because we have new packages and new techniques to play with everyday. My advice is to always use the right tool for you project, no matter if it breaks the rules and no matter if it goes against what you learnt in the past ten years: leave your comfort zone and have fun!"
+
+---
+
+## Resources:
+
+<a href="https://medium.com/@steida/css-in-js-the-argument-refined-471c7eb83955" target="_blank">CSS in JS: The Argument Refined</a><br />
+<a href="https://medium.com/@jviereck/modularise-css-the-react-way-1e817b317b04" target="_blank">Modularise CSS the React way</a><br />
+<a href="https://medium.com/yplan-eng/inline-styles-are-so-2016-f100b79dafe1" target="_blank">Inline Styles are so 2016</a><br />
+<a href="https://medium.com/@aghh1504/4-four-ways-to-style-react-components-ac6f323da822" target="_blank">Four ways to style react components</a><br />
+<a href="https://github.com/css-modules/css-modules" target="_blank">CSS Modules</a><br />
+<a href="https://github.com/FormidableLabs/radium" target="_blank">radium on Github</a><br />
+<a href="https://github.com/facebookincubator/create-react-app" target="_blank">CRA on Github</a><br />
+<a href="http://interglobalmedianetwork.com/post/class-conflicts/" target="_blank">Class Conflicts</a>
+
+
+
+
+
+

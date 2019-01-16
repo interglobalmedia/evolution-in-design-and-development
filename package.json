@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "version": "1.0.0",
+  "description": "Deck created with mdx-deck",
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx",
+    "pdf": "mdx-deck pdf deck.mdx",
+    "image": "mdx-deck screenshot deck.mdx",
+    "help": "mdx-deck"
+  },
+  "keywords": [],
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "babel-loader": "^8.0.5",
+    "file-loader": "^3.0.1",
+    "mdx-deck": "^1.8.2"
+  },
+  "name": "evolution-in-design-and-development-mdx"
+}
