@@ -7,7 +7,10 @@
     "build": "mdx-deck build deck.mdx",
     "pdf": "mdx-deck pdf deck.mdx",
     "image": "mdx-deck screenshot deck.mdx",
-    "help": "mdx-deck"
+    "help": "mdx-deck",
+    "clean": "rm -rf dist",
+    "copy": "cp style.css dist",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "Maria D. Campbell",
@@ -18,5 +21,8 @@
     "file-loader": "^3.0.1",
     "mdx-deck": "^1.8.2"
   },
-  "name": "evolution-in-design-and-development-mdx"
+  "name": "evolution-in-design-and-development-mdx",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }

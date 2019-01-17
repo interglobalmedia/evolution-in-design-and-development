@@ -1,5 +1,4 @@
 import theme from 'mdx-deck/themes'
-import okaidia from 'react-syntax-highlighter/styles/prism/okaidia'
 
 
 export default {
@@ -9,6 +8,7 @@ export default {
     background: '#948c3c',
     font: 'Muli, sans-serif'
   }
+  
 
   // Customize your presentation theme here.
   //
