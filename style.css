@@ -1,0 +1,62 @@
+img {
+    /* image to scale based on the size of the browser window */
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position: center;
+    width: 100%;
+}
+
+pre.language-jsx,
+pre.language-css,
+pre.language-scss {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 350px;
+    height: 100%;
+    max-width: 1024px;
+    width: 100%;
+    margin: 40px auto;
+    background: #9fbd8d;
+    padding: 10px 0 10px 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #7e0000;
+}
+
+[title="Next Slide"],
+[title="Previous Slide"] {
+    background: #7e0000;
+    color: black;
+    opacity: 0.3;
+    width: 2.5rem;
+}
+
+code {
+    color: #7e0000;
+    overflow-y: scroll;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    text-align: justify;
+    line-height: 1.7;
+    color: #633200;
+    list-style: square;
+}
+
+b {
+    color: #7b4957;
+}
+
+blockquote {
+    color: #222324;
+    background: #9c9c9c;
+    box-shadow: 2px 4px 4px rgba(0,0,0,0.3);
+    padding: 1rem;
+}
