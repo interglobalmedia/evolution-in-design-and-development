@@ -594,35 +594,23 @@ Some people want to <b>keep</b> their <b>external stylesheets</b> but want to `l
 
 ---
 
-First `git clone` or download the zip of the <a href="https://github.com/interglobalmedia/evolution-presentation-cra" target="_blank">evolution-presentation-cra</a> `repo`.
+First `git clone` or download the zip of the <a href="https://github.com/interglobalmedia/evolution-presentation-cra-1-2019" target="_blank">evolution-presentation-cra</a> `repo`.
 
 ---
 
-After you have `npm install`ed, create a new branch in which you will <b>eject</b> out of <b>CRA</b>.
+After you have `npm install`ed, you can get immediately cracking with <b>CSS Modules</b>.
 
 ---
 
-In order to enable <b>CSS Modules</b>, we have to <b>eject</b>. <b>CRA</b> does not support <b>CSS Modules</b>.
+Create a <b>new branch</b> called `css-modules` and checkout into it. Simply run the command `git checkout -b css-modules`.
 
 ---
 
-Purportedly <b>full support</b> is on the way with <b>CRA 2</b>. However, the <b>release date</b> is unknown.
+In <b>CRA</b> `< 2.0`, we had to `eject` out of <b>CRA</b> in order to `enable` <b>CSS Modules</b>. with <b>CRA</b> `>= 2.0`, <b>CSS Modules</b> (and Sass) is `supported` <b>out of the box</b>.
 
 ---
 
-First go into the <i><b>new</b></i> `config` directory and into the `webpack.config.dev.js` file.
-
----
-
-Then locate the `css rules` within `module:`, and in `options` under `importLoaders: 1`, add:<br /><br />
-```jsx
-modules: true,<br />
-localIdentName: '[name]__[local]__[hash:base64:5]',
-```
-
----
-
-Next you want to `import` your `classes` from the <b>stylesheet</b> corresponding to the `component` you are styling.
+<b>First</b> you want to `import` your `classes` from the <b>stylesheet</b> corresponding to the `component` you are styling.
 
 ---
 
@@ -630,16 +618,15 @@ This is pretty much the same as importing anything else into a component.<br /><
 At the top of `App.js`
 
 ```jsx
-import appClasses from './App.css';
+import styles from './App.css';
 ```
 Then, for `example`:<br />
 
 ```jsx
 return (
-	<div className={appClasses.App}></div>
+	<div className={styles.App}></div>
 );
 ```
-
 ---
 
 ## Conclusion
